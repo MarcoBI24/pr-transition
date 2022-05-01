@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+          .contenedor{
+            width:100%;
+            background: #14313E;
+            height:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+          }
+          .corchetes {
+            
+            width: 235px;
+            height: 110px;
+            border-radius: 2px;
+            outline: 20px solid #FFDF00;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+          }
+          .corchetes:after {
+            content:"";
+            display:block;
+            width:20px;
+            height:40px;
+            position:relative;
+            left:30px;
+            background:#ffdf00;
+            border-radius:5px;
+          }
+          .corchetes:before {
+            
+            content:"";
+            display:block;
+            width:20px;
+            height:40px;
+            border-radius:5px;
+            position:relative;
+            right:30px;
+            background:#ffdf00;
+            
+          }
+          .contendor-espadas{
+            z-index:10;
+            border:20px solid #14313e;
+            background:#14313e;
+            height:140%;
+            width:70%;
+            display:flex;
+          }
+          .espada-1{
+            background:#ffdf00;
+            height:90%;
+            width:30px;
+            margin:auto;
+            box-sizing:border-box;
+            display:flex;
+            flex-direction:column;
+            position:relative;
+            right:-30px;
+            top:-10px;
+            transform:none;
+            transition: transform 1s, background 1s;
+          }
+           .filo-2{
+            
+            background:#ffdf00;
+            height:21px;
+            width:21px;
+            margin:auto;
+            position:relative;
+            top:-12px;
+            transition: background 1s;
+
+            transform: rotate(45deg);
+          }
+          .filo{
+            background:#ffdf00;
+            height:20px;
+            width:20px;
+            margin:auto;
+            position:relative;
+            top:-12px;
+            transform: rotate(45deg);
+            transition: background 1s;
+            
+          }
+          .espada-2{
+            background:#ffdf00;
+            
+            height:90%;
+            width:30px;
+            margin:auto;
+            box-sizing:border-box;
+            display:flex;
+            flex-direction:column;
+            position:relative;
+            right:30px;
+            top:-10px;
+            transition: transform 1s,background 1s;
+            z-index:111111;
+            
+          }
+          .contendor-espadas:hover >.espada-1 > .filo{
+              background: #163cac;
+          }
+          .contendor-espadas:hover > .espada-2 > .filo-2{
+              background: #163cac;
+          }
+          .contendor-espadas:hover > .espada-1 > .mango {
+              background:#163cac;
+          }
+
+          .contendor-espadas:hover > .espada-2 > .mango-2 {
+            background:#163cac;
+        }
+          .contendor-espadas:hover > .espada-1{
+            transform: rotate(45deg);
+            background: #163cac;
+          }
+        .contendor-espadas:hover > .espada-1 > .aggare {
+            background:#163cac;
+        }
+        .contendor-espadas:hover > .espada-2 > .aggare-2 {
+            background: #163cac;
+        }
+          .contendor-espadas:hover > .espada-2{
+            transform: rotate(-45deg);
+            background: #163cac;
+            outline:10px solid #14313e;
+          }
+
+         
+          .mango-2{
+            transition: background 1s;
+
+            background:#ffdf00;
+            margin:auto;
+            position:relative;
+            right:30px;
+            top:70px;
+            width:90px;
+            height:20px;
+            z-index:100;
+          }
+          .mango{
+            background:#ffdf00;
+            margin:auto;
+            position:relative;
+            right:30px;
+            top:70px;
+            transition: background 1s;
+
+            width:90px;
+            height:20px;
+            z-index:100;
+        
+          }
+          .aggare-2{
+            position:relative;
+            top:50px;
+            background:#ffdf00;
+            width:65%;
+            border-radius:5px;
+            height:50px;
+            margin:auto;
+            transition: background 1s;
+
+          }
+          .aggare{
+            position:relative;
+            top:50px;
+            background:#ffdf00;
+            width:65%;
+            border-radius:5px;
+            height:50px;
+            margin:auto;
+            transition: background 1s;
+
+          }
